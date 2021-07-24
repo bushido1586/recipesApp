@@ -12,6 +12,10 @@ export const PASTAS = [
         id: 1, 
         name: "Pesto Chicken Pasta",
         cookTime: "approx 30 mins",
+        featured: true,
+        image: '',
+        ingredients: "",
+        instructions:""
 
     }
 ];
