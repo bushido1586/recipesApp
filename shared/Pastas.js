@@ -6,7 +6,8 @@ export const PASTAS = [
         featured: false, 
         image: '',
         ingredients: "", 
-        instructions: ""
+        instructions: "",
+        description:''
     }, 
     {
         id: 1, 
@@ -15,7 +16,8 @@ export const PASTAS = [
         featured: true,
         image: '',
         ingredients: "",
-        instructions:""
+        instructions:"",
+        description:'A nice savory chicken and pasta dish with tomatoes, onion, and homemade pesto sauce.'
 
     }
 ];
