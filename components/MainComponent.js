@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import Home from './HomeComponent';
 import Pastas from './PastaComponent';
 import Sauces from './SauceComponent';
+import Contact from './ContactComponent';
+import About from './AboutComponent';
+import Drinks from './DrinksComponent'
 import Constants from 'expo-constants';
 import { View, Platform, StyleSheet, Text, ScrollView  } from 'react-native';
 import {Icon, Image} from 'react-native-elements';
@@ -24,7 +27,22 @@ const MainNavigator = createDrawerNavigator(
                     />
                 )
             }
+        }, 
+        Pastas:{
+            screen: PastaNavigator, 
+            navigationOptions:{
+                drawerIcon: ({tintColor}) =>(
+                    <Icon 
+                        name='cheese'
+                        type='font-awesome'
+                        size={24}
+                        raised
+                        color={tintColor}
+                    />
+                )
+            }
         }
+
     }
 )
 
