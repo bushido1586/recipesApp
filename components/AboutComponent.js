@@ -3,6 +3,11 @@ import { ScrollView, Text } from 'react-native';
 import { Card } from 'react-native-elements';
 
 class About extends Component{
+
+    static navigationOptions = {
+        title: 'About'
+    }
+
     render(){
         <ScrollView>
             <Card title="About the Author" >
