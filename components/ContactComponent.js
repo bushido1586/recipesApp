@@ -19,6 +19,7 @@ class Contact extends Component{
                     <Text style={{marginBottom: 10}}>U.S.A.</Text>
                         
                     <Text>Email: brad.reed114@att.net</Text>     
+                    <Text>Please send any inquires to my email.</Text>
                 </Card>
             </ScrollView>
         );

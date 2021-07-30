@@ -5,7 +5,7 @@ import { Card } from 'react-native-elements';
 class Drinks extends Component{
 
     static navigationOptions = {
-        title: 'drinks'
+        title: 'Drinks'
     }
 
     render(){

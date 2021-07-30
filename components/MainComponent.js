@@ -20,7 +20,7 @@ const HomeNavigator = createStackNavigator(
     {
         defaultNavigationOptions: ({navigation}) => ({
             headerStyle: {
-                backgroundColor: '#9fe2d8'
+                backgroundColor: '#3e8278'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
@@ -42,7 +42,7 @@ const PastaNavigator = createStackNavigator(
     {
         defaultNavigationOptions:({navigation}) => ({
             headerStyle:{
-                backgroundColor:'#9fe2d8'
+                backgroundColor:'#3e8278'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
@@ -64,7 +64,7 @@ const SauceNavigator = createStackNavigator(
     {
         defaultNavigationOptions:({navigation}) => ({
             headerStyle:{
-                backgroundColor:'#9fe2d8'
+                backgroundColor:'#3e8278'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
@@ -86,7 +86,7 @@ const DrinkNavigator = createStackNavigator(
     {
         defaultNavigationOptions:({navigation}) => ({
             headerStyle:{
-                backgroundColor:'#9fe2d8'
+                backgroundColor:'#3e8278'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
@@ -108,7 +108,7 @@ const ContactNavigator = createStackNavigator(
     {
         defaultNavigationOptions:({navigation}) => ({
             headerStyle:{
-                backgroundColor:'#9fe2d8'
+                backgroundColor:'#3e8278'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
@@ -130,7 +130,7 @@ const AboutNavigator = createStackNavigator(
     {
         defaultNavigationOptions:({navigation}) => ({
             headerStyle:{
-                backgroundColor:'#9fe2d8'
+                backgroundColor:'#3e8278'
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
