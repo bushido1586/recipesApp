@@ -6,7 +6,8 @@ import Contact from './ContactComponent';
 import About from './AboutComponent';
 import Drinks from './DrinksComponent'
 import Constants from 'expo-constants';
-import { View, Platform, Text } from 'react-native';
+import SafeAreaView from 'react-native-safe-area-view';
+import { View, Platform, Text, ScrollView } from 'react-native';
 import {Icon, Image} from 'react-native-elements';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createDrawerNavigator, DrawerItems } from 'react-navigation-drawer';
@@ -70,8 +71,8 @@ const SauceNavigator = createStackNavigator(
                 color:'#fff'
             },
             headerLeft:<Icon 
-                name='mortar-pestle'
-                type='font-awesome'
+                name='bowl'
+                type='entypo'
                 onPress={() => navigation.toggleDrawer()}
             />
         })
@@ -92,7 +93,7 @@ const DrinkNavigator = createStackNavigator(
                 color:'#fff'
             },
             headerLeft:<Icon 
-                name='cocktail'
+                name='glass'
                 type='font-awesome'
                 onPress={() => navigation.toggleDrawer()}
             />
@@ -144,6 +145,23 @@ const AboutNavigator = createStackNavigator(
     }
 );
 
+const CustomDrawerContentComponent = props => (
+    <ScrollView>
+        <SafeAreaView 
+            forceInset={{top: 'always', horizontal: 'never'}}>
+            <View >
+                <View style={{flex: 1}}>
+                    
+                </View>
+                <View style={{flex: 2}}>
+                    <Text >NuCamp</Text>
+                </View>
+            </View>
+            <DrawerItems {...props} />
+        </SafeAreaView>
+    </ScrollView>
+);
+
 
 const MainNavigator = createDrawerNavigator(
     {
@@ -180,8 +198,8 @@ const MainNavigator = createDrawerNavigator(
             navigationOptions:{
                 drawerIcon: ({tintColor}) => (
                     <Icon 
-                        name='mortar-pestle'
-                        type='font-awesome'
+                        name='bowl'
+                        type='entypo'
                         size={24}
                         raised
                         color={tintColor}
@@ -194,7 +212,7 @@ const MainNavigator = createDrawerNavigator(
             navigationOptions:{
                 drawerIcon: ({tintColor}) =>(
                     <Icon 
-                        name='cocktail'
+                        name='glass'
                         type='font-awesome'
                         size={24}
                         raised
@@ -231,20 +249,19 @@ const MainNavigator = createDrawerNavigator(
                 )
             }
         }, 
-
+    }, 
+    {
+        drawerBackgroundColor: '#3372d2', 
+        contentComponent: CustomDrawerContentComponent
     }
-)
+);
 
 const AppNavigator = createAppContainer(MainNavigator)
 
 class Main extends Component {
     render() {
         return (
-            <View style={{
-                flex: 1,
-                paddingTop: Platform.OS === 'ios' ? 0 : Constants.statusBarHeight
-            }}>
-                <Text>TESTING</Text>
+            <View >
                 <AppNavigator />
             </View>
         );
