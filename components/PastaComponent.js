@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView } from 'react-native';
-import { Card } from 'react-native-elements';
+import { Card, Image } from 'react-native-elements';
 
 class Pastas extends Component{
 
@@ -12,6 +12,7 @@ class Pastas extends Component{
         return(
         <View>
             <Text>This portion is under construction, check back soon!</Text>
+            <Image source={require('../shared/Images/PastaPlate.jpg')} />
         </View>
         );
     }

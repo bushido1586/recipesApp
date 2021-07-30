@@ -9,11 +9,13 @@ class About extends Component{
     }
 
     render(){
-        <ScrollView>
-            <Card title="About the Author" >
+        return(
+            <ScrollView>
+                <Card title="About the Author" >
 
-            </Card>
-        </ScrollView>
+                </Card>
+            </ScrollView>
+        );
     }
 }
 

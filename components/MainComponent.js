@@ -154,7 +154,7 @@ const CustomDrawerContentComponent = props => (
                     
                 </View>
                 <View style={{flex: 2}}>
-                    <Text >NuCamp</Text>
+                    <Text >Brad's Wrangled Recipes</Text>
                 </View>
             </View>
             <DrawerItems {...props} />
