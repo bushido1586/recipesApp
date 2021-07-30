@@ -9,9 +9,11 @@ class Drinks extends Component{
     }
 
     render(){
+        return(
         <View>
             <Text>This portion is under construction, check back soon!</Text>
         </View>
+        );
     }
 }
 

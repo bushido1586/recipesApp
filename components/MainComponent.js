@@ -260,12 +260,17 @@ const AppNavigator = createAppContainer(MainNavigator)
 
 class Main extends Component {
     render() {
-        return (
-            <View >
-                <AppNavigator />
-            </View>
-        );
+      return (
+        <View
+          style={{
+            flex: 1,
+            paddingTop: Platform.OS === 'ios' ? 0 : Constants.statusBarHeight,
+          }}
+        >
+          <AppNavigator />
+        </View>
+      )
     }
-}
+  }
 
 export default Main;
