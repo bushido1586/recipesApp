@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView } from 'react-native';
-import {Pastas} from '../shared/Pastas';
 import { Card, Image } from 'react-native-elements';
 
 
