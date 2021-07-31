@@ -2,7 +2,7 @@ export const PASTAS = [
     {
         id: 0, 
         name: "Cajun Chicken Pasta",
-        cookTime: 'Aprrox. 30 mins', 
+        cookTime: 'Aprrox 30 mins', 
         favorite: false, 
         image: '',
         ingredients: "", 
@@ -12,7 +12,7 @@ export const PASTAS = [
     {
         id: 1, 
         name: "Pesto Chicken Pasta",
-        cookTime: "approx 30 mins",
+        cookTime: "Approx 30 mins",
         favorite: true,
         image: '',
         ingredients: "1/2 pound cherry tomatoes, halved. {'\n'} 1/2 of a red onion, diced {'\n'} 1 pound cooked pasta (I use Penne) {'\n'} 8oz of homemade pesto sauce(see sauces page for instructions)",
