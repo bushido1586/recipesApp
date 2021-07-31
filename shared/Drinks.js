@@ -1,4 +1,4 @@
-export const SAUCES = [
+export const DRINKS = [
     {
         id: 0, 
         name: "Rebellious Fish",
