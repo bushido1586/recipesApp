@@ -113,7 +113,9 @@ const ContactNavigator = createStackNavigator(
             },
             headerTintColor: '#fff',
             headerTitleStyle: {
-                color:'#fff'
+                color:'#fff', 
+                fontWeight: 'bold', 
+                textAlign: 'center'
             },
             headerLeft:<Icon 
                 name='address-card'
@@ -148,7 +150,7 @@ const AboutNavigator = createStackNavigator(
 
 const FavoriteNavigator = createStackNavigator(
     {
-        About: {screen: Favorite}
+        Favorite: {screen: Favorite}
     },
     {
         defaultNavigationOptions:({navigation}) => ({
