@@ -3,9 +3,9 @@ import { View, Text, ScrollView } from 'react-native';
 import { Card } from 'react-native-elements';
 
 function RenderFavorites(props){
-    const {favorite}=props
+    const {featured}=props
 
-    if(favorite){
+    if(featured){
         return(
             <Card>
                 <Text>This will have an item to display</Text>

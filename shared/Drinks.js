@@ -3,7 +3,7 @@ export const DRINKS = [
         id: 0, 
         name: "Rebellious Fish",
         cookTime: '15 mins of prep', 
-        favorite: true, 
+        featured: true, 
         image: '',
         ingredients: "1.5 oz Russian Standard Vodka", 
         instructions: "",

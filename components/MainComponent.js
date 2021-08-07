@@ -4,10 +4,11 @@ import Pastas from './PastaComponent';
 import Sauces from './SauceComponent';
 import Contact from './ContactComponent';
 import About from './AboutComponent';
+import Favorite from './FavoriteComponent';
 import Drinks from './DrinksComponent'
 import Constants from 'expo-constants';
 import SafeAreaView from 'react-native-safe-area-view';
-import { View, Platform, Text, ScrollView } from 'react-native';
+import { View, Platform, Text, ScrollView, StyleSheet } from 'react-native';
 import {Icon, Image} from 'react-native-elements';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createDrawerNavigator, DrawerItems } from 'react-navigation-drawer';
@@ -145,6 +146,28 @@ const AboutNavigator = createStackNavigator(
     }
 );
 
+const FavoriteNavigator = createStackNavigator(
+    {
+        About: {screen: Favorite}
+    },
+    {
+        defaultNavigationOptions:({navigation}) => ({
+            headerStyle:{
+                backgroundColor:'#3e8278'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+                color:'#fff'
+            },
+            headerLeft:<Icon 
+                name='heart'
+                type='font-awesome'
+                onPress={() => navigation.toggleDrawer()}
+            />
+        })
+    }
+);
+
 const CustomDrawerContentComponent = props => (
     <ScrollView>
         <SafeAreaView 
@@ -154,7 +177,7 @@ const CustomDrawerContentComponent = props => (
                     
                 </View>
                 <View style={{flex: 2}}>
-                    <Text >Brad's Wrangled Recipes</Text>
+                    <Text style={styles.drawerHeader} >Brad's Wrangled Recipes</Text>
                 </View>
             </View>
             <DrawerItems {...props} />
@@ -221,6 +244,20 @@ const MainNavigator = createDrawerNavigator(
                 )
             }
         }, 
+        Favorite:{
+            screen: FavoriteNavigator,
+            navigationOptions:{
+                drawerIcon: ({tintColor}) =>(
+                    <Icon 
+                        name='heart'
+                        type='font-awesome'
+                        size={24}
+                        raised
+                        color={tintColor}
+                    />
+                )
+            }
+        },
         About: {
             screen: AboutNavigator,
             navigationOptions:{
@@ -272,5 +309,13 @@ class Main extends Component {
       )
     }
   }
+
+  const styles = StyleSheet.create({
+        drawerHeader:{
+            color: '#0d3850',
+            fontSize: 24,
+            fontWeight: 'bold'
+        }
+  });
 
 export default Main;
