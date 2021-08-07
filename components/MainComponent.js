@@ -114,8 +114,7 @@ const ContactNavigator = createStackNavigator(
             headerTintColor: '#fff',
             headerTitleStyle: {
                 color:'#fff', 
-                fontWeight: 'bold', 
-                textAlign: 'center'
+                fontWeight: 'bold' 
             },
             headerLeft:<Icon 
                 name='address-card'
