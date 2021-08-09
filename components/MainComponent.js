@@ -36,6 +36,28 @@ const HomeNavigator = createStackNavigator(
     }
 );
 
+const LoginNavigator= createStackNavigator(
+    {
+        Login: { screen: Login }
+    },
+    {
+        defaultNavigationOptions: ({navigation}) =>({
+           headerStyle:{
+               backgroundColor: '#3e8278'
+           }, 
+           headerTintColor:'#fff',
+           headerTitleStyle: {
+               color:'#fff'
+           },
+           headerLeft: <Icon 
+                name='sign-in'
+                type='font-awesome'
+                onPress ={() => navigation.toggleDrawer()}
+           />
+        })
+    }
+);
+
 const PastaNavigator = createStackNavigator(
     {
         Pastas: {screen: Pastas}
@@ -189,6 +211,20 @@ const CustomDrawerContentComponent = props => (
 
 const MainNavigator = createDrawerNavigator(
     {
+        Login: { 
+            screen: LoginNavigator,
+            navigationOptions:{
+                drawerIcon: ({tintColor}) =>(
+                    <Icon 
+                        name='sign-in'
+                        type='font-awesome'
+                        size={24}
+                        raised
+                        color={tintColor}
+                    />
+                )
+            } 
+        },
         Home: {
             screen: HomeNavigator, 
             navigationOptions:{
