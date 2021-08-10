@@ -1,22 +1,38 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView } from 'react-native';
 import { Card } from 'react-native-elements';
+import {PASTAS } from './PastaComponent';
+import {SAUCES} from './SauceComponent';
+import {DRINKS} from './DrinksComponent';
 
 function RenderFavorites(props){
-    const {featured}=props
+    const {item}=props
 
-    if(featured){
-        return(
-            <Card>
-                <Text>This will have an item to display</Text>
+    if (item) {
+        return (
+            <Card
+                featuredTitle={item.name}
+            >
+                <Text style={{margin: 10}}>
+                    {item.description}
+                </Text>
             </Card>
-        )
+        );
     }
     return <View />
 }
 
 
 class Home extends Component{
+
+    constructor(props){
+        super(props)
+        this.state={
+            pastas: PASTAS, 
+            drinks: DRINKS, 
+            sauces: SAUCES
+        }
+    }
    
     static navigationOptions = {
         title: 'Home'
@@ -25,8 +41,7 @@ class Home extends Component{
     render(){
         return(
             <View>
-                <Text>Welcome to my new Recipe App! Here are my favorites!Check out the menu for more!</Text>
-                <RenderFavorites />
+                <Text style={{margin: 10, fontSize:16, color:'#0d3850'}}>Below are some of my favorites. Be sure to check them out often, they may change!</Text>
             </View>
         );
     }

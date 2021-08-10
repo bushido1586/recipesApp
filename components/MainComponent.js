@@ -5,7 +5,8 @@ import Sauces from './SauceComponent';
 import Contact from './ContactComponent';
 import About from './AboutComponent';
 import Favorite from './FavoriteComponent';
-import Drinks from './DrinksComponent'
+import Drinks from './DrinksComponent';
+import Login from './LoginComponent';
 import Constants from 'expo-constants';
 import SafeAreaView from 'react-native-safe-area-view';
 import { View, Platform, Text, ScrollView, StyleSheet } from 'react-native';
@@ -13,6 +14,7 @@ import {Icon, Image} from 'react-native-elements';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createDrawerNavigator, DrawerItems } from 'react-navigation-drawer';
 import { createAppContainer } from 'react-navigation';
+
 
 const HomeNavigator = createStackNavigator(
     {
@@ -197,7 +199,7 @@ const CustomDrawerContentComponent = props => (
             forceInset={{top: 'always', horizontal: 'never'}}>
             <View >
                 <View style={{flex: 1}}>
-                    
+                    <Image source={require('../shared/Images/PastaPlate.jpg')} style={styles.drawerImage}/>
                 </View>
                 <View style={{flex: 2}}>
                     <Text style={styles.drawerHeader} >Brad's Wrangled Recipes</Text>
@@ -211,20 +213,6 @@ const CustomDrawerContentComponent = props => (
 
 const MainNavigator = createDrawerNavigator(
     {
-        Login: { 
-            screen: LoginNavigator,
-            navigationOptions:{
-                drawerIcon: ({tintColor}) =>(
-                    <Icon 
-                        name='sign-in'
-                        type='font-awesome'
-                        size={24}
-                        raised
-                        color={tintColor}
-                    />
-                )
-            } 
-        },
         Home: {
             screen: HomeNavigator, 
             navigationOptions:{
@@ -323,6 +311,20 @@ const MainNavigator = createDrawerNavigator(
                 )
             }
         }, 
+        Login: { 
+            screen: LoginNavigator,
+            navigationOptions:{
+                drawerIcon: ({tintColor}) =>(
+                    <Icon 
+                        name='sign-in'
+                        type='font-awesome'
+                        size={24}
+                        raised
+                        color={tintColor}
+                    />
+                )
+            } 
+        },
     }, 
     {
         drawerBackgroundColor: '#3372d2', 
@@ -351,7 +353,14 @@ class Main extends Component {
         drawerHeader:{
             color: '#0d3850',
             fontSize: 24,
-            fontWeight: 'bold'
+            fontWeight: 'bold', 
+            alignItems:'center'
+        }, 
+        drawerImage:{
+            height: 60, 
+            width: 60,
+            margin:10,
+            alignItems: 'center'
         }
   });
 
