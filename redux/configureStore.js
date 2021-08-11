@@ -2,6 +2,9 @@ import {createStore, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import {favorites} from './favorites';
+import {sauces} from './sauces';
+import {pastas} from './pastas';
+import {drinks} from './drinks';
 import {persistStore, persistCombineReducers} from 'redux-persist';
 import storage from 'redux-persist/es/storage';
 
@@ -14,7 +17,10 @@ const config ={
 export const ConfigureStore =() => {
     const store = createStore(
         persistCombineReducers(config, {
-            favorites
+            favorites, 
+            sauces, 
+            pastas, 
+            drinks
         }), 
         applyMiddleware(thunk, logger)
     );
