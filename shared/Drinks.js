@@ -1,6 +1,6 @@
 export const DRINKS = [
     {
-        id: 0, 
+        drinksId: 0, 
         name: "Rebellious Fish",
         cookTime: '15 mins of prep', 
         featured: true, 

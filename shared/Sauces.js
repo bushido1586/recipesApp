@@ -1,6 +1,6 @@
 export const SAUCES = [
     {
-        id: 0, 
+        sauceId: 0, 
         name: "Homemade Pesto",
         cookTime: '15 mins of prep', 
         featured: true, 

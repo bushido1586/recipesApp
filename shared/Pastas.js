@@ -1,6 +1,6 @@
 export const PASTAS = [
     {
-        id: 0, 
+        pastaId: 0, 
         name: "Cajun Chicken Pasta",
         cookTime: 'Aprrox 30 mins', 
         featured: false, 
@@ -10,7 +10,7 @@ export const PASTAS = [
         description:'A creamy and spicy pasta dish, perfect for date night!'
     }, 
     {
-        id: 1, 
+        pastaId: 1, 
         name: "Pesto Chicken Pasta",
         cookTime: "Approx 30 mins",
         featured: true,
