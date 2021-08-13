@@ -5,22 +5,7 @@ import {PASTAS } from './PastaComponent';
 import {SAUCES} from './SauceComponent';
 import {DRINKS} from './DrinksComponent';
 
-function RenderFavorites(props){
-    const {item}=props
 
-    if (item) {
-        return (
-            <Card
-                featuredTitle={item.name}
-            >
-                <Text style={{margin: 10}}>
-                    {item.description}
-                </Text>
-            </Card>
-        );
-    }
-    return <View />
-}
 
 
 class Home extends Component{

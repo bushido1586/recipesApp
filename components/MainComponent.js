@@ -269,7 +269,7 @@ const MainNavigator = createDrawerNavigator(
                 )
             }
         }, 
-        Favorite:{
+        /*Favorite:{
             screen: FavoriteNavigator,
             navigationOptions:{
                 drawerIcon: ({tintColor}) =>(
@@ -282,7 +282,7 @@ const MainNavigator = createDrawerNavigator(
                     />
                 )
             }
-        },
+        },*/
         About: {
             screen: AboutNavigator,
             navigationOptions:{
