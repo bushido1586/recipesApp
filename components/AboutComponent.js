@@ -38,7 +38,7 @@ const styles=StyleSheet.create({
         color:'#fff'
     },
     page :{
-        backgroundColor: '#3372d2'
+        backgroundColor: '#9bc6d2'
     }, 
     image :{
         height: 200,

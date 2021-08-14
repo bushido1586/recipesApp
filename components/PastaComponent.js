@@ -6,11 +6,11 @@ export const PASTAS = [
     {
         pastaId: 0, 
         title: "Cajun Chicken Pasta",
-        prep: 'Aprrox 30 mins, plus another 30 to cook.', 
+        prep: 'Aprrox 20 mins, plus another 20 to cook.', 
         featured: false, 
         image: '',
-        ingredients: "", 
-        instructions: "",
+        ingredients: "1 red bell pepper \n1 green bell pepper \n1 poblano pepper \ni medium red onion \n1 bunch of green onion \n1 pound of chicken breast, cubed \n1 cup heavy cream \n1/3 cup shredded parmesan cheese \n1 tablespoon olive oil \ncajun seasoning: enough to coat chicken \n8oz cooked linguini pasta \n1/4 teaspoon dried basil \n1/8 teaspoon garlic salt \n1/8 teaspoon celery salt \n 1/8 teaspoon garlic powder \n1/8 teaspoon black pepper", 
+        instructions: "1.) Fully cook the pasta, drain and set aside \n2.) place the chicken cubes and cajun seasoning in a large bag and shake to coat fully. In a large skillet heat the oil over medium heat, then saute the chicken until almost tender(about 5-7 mins) \n3.) Add the veggies to the pan saute and stir for 2 to 3 minuets, then reduce the heat to medium-low \n4.) Add cream, basil, salts, pepper, and garlic powder, heat through stirring frequently to avoid burning the cream. Add shredded cheese and mix until it starts to melt. Add pasta and toss in sauce until heated. \n5.) Enjoy!",
         description:'A creamy and spicy pasta dish, perfect for date night!'
     }, 
     {
