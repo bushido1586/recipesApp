@@ -11,15 +11,25 @@ class About extends Component{
     render(){
         return(
             <ScrollView style={styles.page}>
+                <Mission />
                 <Me />
             </ScrollView>
         );
     }
 }
 
+function Mission(){
+    return(
+        <Card style={styles.cardHeader} title="My Mission">
+            <Text style={{margin:20}, {fontSize:18}}>This app's entire purpose is to pull out recipes into nothing more than a card that lets you see what you need and need to do. No "life stories" no extra fluff.</Text>
+            <Text style={{margin:20}, {fontSize:18}}>Here is all about just food, and isn't that what we all really want.</Text>
+        </Card>
+    )
+}
+
 function Me(){
     return(
-        <Card style={styles.cardHeader} title="Who AM I?">
+        <Card style={styles.cardHeader} title="About the Creator!">
             <Image source={require('../shared/Images/me-crop.jpg')} style={styles.image} />
             <Text style={{margin:20}, {fontSize: 18}}>
                 Hello! My name is Brad, I made this app as a way to get and eventually keep the best recipes around without all the extra stuff!
@@ -34,8 +44,8 @@ function Me(){
 
 const styles=StyleSheet.create({
     cardHeader:{
-        backgroundColor: '#124086', 
-        color:'#fff'
+        color: '#4a0e73', 
+        fontWeight: 'bold'
     },
     page :{
         backgroundColor: '#9bc6d2'

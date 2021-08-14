@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text, ScrollView, StyleSheet, ImageBackground } from 'react-native';
-import { Icon } from 'react-native-elements';
+import { View, Text, StyleSheet, ImageBackground } from 'react-native';
+import { Button } from 'react-native-elements';
 
 const HomeRender = ()=>{
     return(

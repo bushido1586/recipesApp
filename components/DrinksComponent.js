@@ -31,17 +31,17 @@ const TitleItem =({title}) =>(
 )
 const PrepItem=({prep}) =>(
     <View>
-        <Text style={styles.content} >Prep time:{prep}</Text>
+        <Text style={styles.content} >Prep time: {'\n'}{prep}</Text>
     </View>
 )
 const IngredientsItem =({ingredients}) =>(
     <View>
-        <Text style={styles.content} >{ingredients}</Text>
+        <Text style={styles.content} >Ingredients: {'\n'}{ingredients}</Text>
     </View>
 )
 const InstructionsItem =({instructions}) =>(
     <View>
-        <Text style={styles.content} >{instructions}</Text>
+        <Text style={styles.content} >Instructions: {'\n'}{instructions}</Text>
     </View>
 )
 

@@ -30,7 +30,7 @@ const HomeNavigator = createStackNavigator(
                 color: '#fff'
             },
             headerLeft: <Icon 
-                name='home' 
+                name='bars' 
                 type='font-awesome'
                 onPress={() => navigation.toggleDrawer()}
             />
@@ -171,7 +171,7 @@ const AboutNavigator = createStackNavigator(
     }
 );
 
-const FavoriteNavigator = createStackNavigator(
+/*const FavoriteNavigator = createStackNavigator(
     {
         Favorite: {screen: Favorite}
     },
@@ -191,7 +191,7 @@ const FavoriteNavigator = createStackNavigator(
             />
         })
     }
-);
+);*/
 
 const CustomDrawerContentComponent = props => (
     <ScrollView>
@@ -220,7 +220,7 @@ const MainNavigator = createDrawerNavigator(
                     <Icon 
                         name='home'
                         type='font-awesome'
-                        size={24}
+                        size={18}
                         raised
                         color={tintColor}
                     />
@@ -234,7 +234,7 @@ const MainNavigator = createDrawerNavigator(
                     <Icon 
                         name='bowl'
                         type='entypo'
-                        size={24}
+                        size={18}
                         raised
                         color={tintColor}
                     />
@@ -248,7 +248,7 @@ const MainNavigator = createDrawerNavigator(
                     <Icon 
                         name='bowl'
                         type='entypo'
-                        size={24}
+                        size={18}
                         raised
                         color={tintColor}
                     />
@@ -262,7 +262,7 @@ const MainNavigator = createDrawerNavigator(
                     <Icon 
                         name='glass'
                         type='font-awesome'
-                        size={24}
+                        size={18}
                         raised
                         color={tintColor}
                     />
@@ -290,7 +290,7 @@ const MainNavigator = createDrawerNavigator(
                     <Icon 
                         name='info-circle'
                         type='font-awesome'
-                        size={24}
+                        size={18}
                         raised
                         color={tintColor}
                     />
@@ -304,7 +304,7 @@ const MainNavigator = createDrawerNavigator(
                     <Icon 
                         name='address-card'
                         type='font-awesome'
-                        size={24}
+                        size={18}
                         raised
                         color={tintColor}
                     />
@@ -318,7 +318,7 @@ const MainNavigator = createDrawerNavigator(
                     <Icon 
                         name='sign-in'
                         type='font-awesome'
-                        size={24}
+                        size={18}
                         raised
                         color={tintColor}
                     />
