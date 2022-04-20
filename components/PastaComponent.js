@@ -28,7 +28,7 @@ export const PASTAS = [
 
 const TitleItem =({title}) =>(
     <View>
-        <Text style={styles.title}  >{title}</Text>
+        <Text style={styles.title}>{title}</Text>
     </View>
 )
 const PrepItem=({prep}) =>(
